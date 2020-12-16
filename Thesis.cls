@@ -158,17 +158,17 @@ supervision.\\[2.5cm]
         Date:\\
     \end{flushleft}
 \end{minipage}
-\begin{minipage}{0.5\textwidth}
-    \begin{flushleft} \large
-        \vspace{2cm}
-        \rule[0.5em]{13em}{0.5pt}\\
-        \emph{Co-Supervisor} \\
-        \cosupname\\
-        \cosuppos,\\
-        \cosupinst\\
-        Date:\\
-    \end{flushleft}
-\end{minipage}\\[3cm]
+% \begin{minipage}{0.5\textwidth}
+%     \begin{flushleft} \large
+%         \vspace{2cm}
+%         \rule[0.5em]{13em}{0.5pt}\\
+%         \emph{Co-Supervisor} \\
+%         \cosupname\\
+%         \cosuppos,\\
+%         \cosupinst\\
+%         Date:\\
+%     \end{flushleft}
+% \end{minipage}\\[3cm]
     }
 
     \vfil\vfil\null
@@ -285,7 +285,7 @@ supervision.\\[2.5cm]
 
 \newcommand*{\thesistitle}[1]{\def\ttitle{#1}}
 \newcommand*{\supervisor}[1]{\def\supname{#1}}
-\newcommand*{\cosupervisor}[1]{\def\cosupname{#1}}
+%\newcommand*{\cosupervisor}[1]{\def\cosupname{#1}}
 \newcommand*{\documenttype}[1]{\def\doctype{#1}}
 \newcommand*{\coursecode}[1]{\def\ccode{#1}}
 \newcommand*{\coursename}[1]{\def\cname{#1}}
@@ -304,8 +304,8 @@ supervision.\\[2.5cm]
 \newcommand*{\FACULTY}[1]{\def\FACNAME{#1}}
 \newcommand*{\supervisorposition}[1]{\def\suppos{#1}}
 \newcommand*{\supervisorinstitute}[1]{\def\supinst{#1}}
-\newcommand*{\cosupervisorposition}[1]{\def\cosuppos{#1}}
-\newcommand*{\cosupervisorinstitute}[1]{\def\cosupinst{#1}}
+%\newcommand*{\cosupervisorposition}[1]{\def\cosuppos{#1}}
+%\newcommand*{\cosupervisorinstitute}[1]{\def\cosupinst{#1}}
 \newcommand*{\subject}[1]{\def\subjectname{#1}}
 \newcommand*{\keywords}[1]{\def\keywordnames{#1}}
 
@@ -340,12 +340,12 @@ supervision.\\[2.5cm]
             \vspace{0.5cm}
             \emph{Supervisors:} \\
             \supname \\ % The supervisor's name
-            \& \\
+           % \& \\
             \cosupname % The co-supervisor's name
         \end{center}
 
         \large \textit{A thesis submitted in partial fulfillment of the
-        requirements of\\\ccode{} \cname}\\[2cm] % University requirement text
+        requirements of\\\ccode{}  \cname}\\[2cm] % University requirement text
 
         \includegraphics{bits_logo.png}\\ % University/department logo
         \UNIVNAME\\

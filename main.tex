@@ -67,14 +67,23 @@ words on virtually any topic without possessing a shred of information, which is
 how I got a good job in journalism.}{Dave Barry}
 
 \begin{abstract}
-The Thesis Abstract is written here (and usually kept to just this page).
-The page is kept centered vertically so can expand into the blank space above
-the title too\ldots
+Optical character recognition(OCR) is a well known process for converting text images to machine
+editable text format. Applications of OCR include preserving old/historical documents in electronic
+format, library cataloging, automatic reading for sorting of postal mail, bank cheques and forms as
+base for many applications in Natural Language Processing(NLP). OCR is a difficult problem to
+solve on real world data. In specific for Telugu language it is very difficult problem as single character
+formed by a single vowel or consonant or it can be compound character consists of combination of
+vowel and consonants.\\ 
+\par
+Conventional OCR approaches like Support Vector Machines(SVM) detect the characters by segmenting the image
+til character level this gives poor results .In our approach we used Convolutional neural network and Long
+short-term memory neural networks which takes directly  segmented word as input instead of character there
+my improving the accuracy of OCR system.  
+
 \end{abstract}
 
 \begin{acknowledgements}
-The acknowledgements and the people to thank go here, don't forget to include
-your project advisor\ldots
+I Thank Raghu Akkili for his guidance \ldots
 \end{acknowledgements}
 
 %-------------------------------------------------------------------------------
@@ -108,7 +117,9 @@ your project advisor\ldots
 \lhead{\emph{Abbreviations}} % Set the left side page header to "Abbreviations"
 \listofsymbols{ll} % Include a list of Abbreviations (a table of two columns)
 {
-\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere \\
+\textbf{CNN} & \textbf{C}onvolutional \textbf{N}eural \textbf{N}etwork \\
+\textbf{LSTM} & \textbf{L}ong \textbf{S}hort \textbf{N}etwork \textbf{T}erm \textbf{M}emory\\
+\textbf{CTC} & \textbf{C}onnectionist \textbf{T}emporal \textbf{C}lassification \\
 %\textbf{Acronym} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or \\
 }
 
@@ -116,17 +127,17 @@ your project advisor\ldots
 %	PHYSICAL CONSTANTS/OTHER DEFINITIONS
 %-------------------------------------------------------------------------------
 
-\clearpage % Start a new page
+% \clearpage % Start a new page
 
-% Set the left side page header to "Physical Constants"
-\lhead{\emph{Physical Constants}}
+% % Set the left side page header to "Physical Constants"
+% \lhead{\emph{Physical Constants}}
 
- % Include a list of Physical Constants (a four column table)
-\listofconstants{lrcl}
-{
-Speed of Light & $c$ & $=$ & $2.997\ 924\ 58\times10^{8}\ \mbox{ms}^{-\mbox{s}}$ (exact)\\
-% Constant Name & Symbol & = & Constant Value (with units) \\
-}
+%  % Include a list of Physical Constants (a four column table)
+% \listofconstants{lrcl}
+% {
+% Speed of Light & $c$ & $=$ & $2.997\ 924\ 58\times10^{8}\ \mbox{ms}^{-\mbox{s}}$ (exact)\\
+% % Constant Name & Symbol & = & Constant Value (with units) \\
+% }
 
 %-------------------------------------------------------------------------------
 %	SYMBOLS
@@ -164,7 +175,7 @@ me how to deal with all sorts of bureaucracy while doing real work.}
 % Uncomment the lines as you write the chapters
 
 \input{Chapters/Chapter1}
-%\input{Chapters/Chapter2}
+\input{Chapters/Chapter2}
 %\input{Chapters/Chapter3}
 %\input{Chapters/Chapter4}
 %\input{Chapters/Chapter5}
