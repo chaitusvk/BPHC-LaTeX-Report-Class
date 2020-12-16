@@ -22,11 +22,20 @@ Preprocessing and Binarization is First stage of OCR process. In this stage we h
 
 \section{Line and Word Segmentation}
 This Stage of process segments the image into lines and further the line image are segmented into word images
+Histogram projection method is used Horizontally to segment lines and Vertically to segment words from lines image
 \begin{figure}[h]
-\includegraphics{Figures/my_tel_img.png}
-\caption{A Telugu Text Image}
+\centering
+\includegraphics{Figures/image_segmentaion.png}
+\caption{A Telugu Text Image Segmentation}
 \end{figure}
-%\includegraphics{Figures/my_tel_img.png} \\
-%\includegraphics{Figures/merge_img.png}
+% \includegraphics{Figures/my_tel_img.png} \\
+% \includegraphics{Figures/merge_img.png}
+
+\section{Word recognition with CNN LSTM Neural Network}
+The Segmented Word Images are fed to Neural network which gives the text output .Since the Segmentaion is done at word level rather than character level accuracy is improved.
+
+\section{Data Preparation}
+Since there is Readily available OCR  data for Telugu language. words are taken from telugu corpus and used PIL tool to generate images from text.
+
 
 
